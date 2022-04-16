@@ -1,0 +1,600 @@
+\documentclass[serif]{beamer}
+\usepackage{hyperref}
+\usepackage[object=vectorian]{pgfornament}% Pour les ornements
+\usepackage{tikz}
+\usetikzlibrary{fadings}% en préambule pour le dégradé
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{framed}
+\usepackage{fancybox}
+\usepackage{pifont}
+%\setbeamertemplate{itemize subitem}[triangle]
+%\setbeamertemplate{itemize subsubitem}[circle]
+\usepackage{concrete}% la fonte utilisée dans cette ﬁche
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{pdfpages}% pour insérer des pages précises d’un pdf multipages
+\usetheme{Frankfurt}
+%\usecolortheme{seahorse}%%% Pour changer les themes de couleurs
+\usepackage[frenchb]{babel}
+\setlength\parindent{0pt}
+\setbeamertemplate{navigation symbols}{}
+\author{ AYIVI Justin \and KENGNE KUATE Darline}
+\title[Exposé d'Economie]{Économie comportementale : impact par rapport aux modèles économiques traditionnels} % remarque le texte court car l’autre ne passe pas dans le pied de page
+%\subtitle{Première partie : bases et mise en page}
+\institute{ENSAE}
+\setbeamertemplate{itemize item}[square]
+%\setbeamercolor{alerted text}{fg=nom de la couleur}%
+%\setbeamercolor{alerted text}{fg=yellow}
+\usepackage{pstricks}% POUR LES DESSINS DE CERCLE
+% REDEFINITION DE NOUVELLES COMMANDES 
+\newcommand{\mycircled}[2][none]{%
+ \tikz[baseline=(a.base)]\node[draw,circle,inner sep=2pt, outer sep=0pt,fill=#1](a){\ensuremath #2\strut};
+ }
+ \newcommand{\Conclusion}{node[xshift=-5.5ex,rotate=10]{C}
+node[xshift=-4.5ex,rotate=170]{o}
+node[xshift=-3.5ex,rotate=0]{n}
+node[xshift=-2.5ex,rotate=0]{c}
+node[xshift=-1.5ex,rotate=0]{l}
+node[rotate=0]{u}
+node[xshift=1.5ex,rotate=0]{s}
+node[xshift=2.5ex,rotate=0]{i}
+node[xshift=3.5ex,rotate=0]{o}
+node[xshift=4.5ex,rotate=0]{n}}
+\begin{document}
+%%%%%%%%%%%%%%
+%%% diapo 1 %%%
+%%%%%%%%%%%%%%
+\begin{frame}{}
+\transwipe[duration=0.3]
+\maketitle
+\end{frame}
+\tableofcontents%% TABLE DES MATIERES
+
+\section{Introduction}
+\subsection{}
+%%%%%%%%%%%%%%
+%%% diapo 2 %%%
+%%%%%%%%%%%%%%
+\begin{frame}{Entrée en matière}
+
+%introduction...
+%\begin{block}{}
+ %Avec l'avènement de la crise financière de l'an 2000 de nombreuses critiques ont été faites sur les économistes et sur leur prédilection. Alors de nombreux facteurs furent intégrés dans les modèles économiques traditionnels. Cela symbolise une nouvelle branche de l'économie connu sous le %nom d'économie comportementale. notre exposé se subdivisera comme suit : 
+%\begin{itemize}
+%\item Différences entre l'économie comportementale et économie classique
+%\item Les apports de l’économie comportementale
+%\item Que reproche-t-on aux comportementalistes ?
+%\item conclusion
+%\end{itemize}
+%\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%
+%%% diapo 3 %%%
+%%%%%%%%%%%%%%
+\section{Différences avec les classiques}
+%\begin{frame}{Un peu d'histoire}
+%L’économie comportementale symbolise le rapprochement entre l’économie et la psychologie.
+%\begin{itemize}
+%\item Les économistes sont instrumentalistes %\begin{definition} Ils ne font que de la prélédiction \end{definition}
+%\item Les comportementalistes eux ont une approche différente 
+%\begin{alertblock}{ Pourquoi?}
+%Les économistes comportementalistes s'intéressent particulièrement à la comprehension des phénomènes qui sous-tendent les évènements économiques
+%\end{alertblock}
+%\end{itemize}
+%Comment procèdent les économistes comportementalistes?
+%\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 4 %%%
+%%%%%%%%%%%%%%
+\subsection{Hypothèses}
+\begin{frame}{Hypothèses faites}
+\transwipe[duration=0.3]
+Comparaison du mode de fonctionnement des classiques et des comportementalistes
+\begin{columns}
+\begin{column}{0.5\textwidth}
+	 \begin{block}{Classiques}
+	 Les agents économiques sont:
+	   \begin{enumerate}
+	   	\item maximisateurs,rationnels
+	   	\item intelligents 
+	   	\item égoiste 
+	   \end{enumerate}
+	 \end{block}
+\end{column}
+\begin{column}{0.5\textwidth}
+		\begin{exampleblock}{Comportementalistes}
+		 Les agents économiques sont
+			\begin{enumerate}
+			 \item soumis à leurs émotions, problème de contrôle de soi
+			 \item limités 
+			 \item affichent un certain nombre de biais qui influent sur leurs prises de décisions
+			\end{enumerate}
+		\end{exampleblock}
+\end{column}
+\end{columns}
+\vspace*{0.5cm}
+Point de rupture : les préférences, la nature de l’information et les modes de décision.
+%Les principaux points de rupture entre ces derniers et les économistes traditionnelles se situent sur 3 points : les préférences, la nature de l’information et les modes de décision.
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 5 %%%
+%%%%%%%%%%%%%%
+\subsubsection{préférences}
+\begin{frame}{Préférences}
+Instabilité des préférences
+%Selon les comportementalistes, les préférences ne sont pas stables comme le pense les économistes classiques. Un exemple illustratif pourra résulter de la théorie des perspectives
+\begin{itemize}
+	\item Théorie des perspectives
+	\item Procastination
+\end{itemize}
+	%\begin{block}{Théorie des perspectives}
+	% Les agents prennent peu de risque dans le domaine des gains mais beaucoup de risque pour éviter des pertes, ou encore, qu’ils sont en général patients à long terme mais extrêmement impatient à court terme
+	 %\end{block}
+	 \begin{exampleblock}{Illustration}
+	 \begin{itemize}
+	 
+	 \item[\ding{164}]  Recevoir 1000 francs CFA aujourd’hui ou bien 1500 francs CFA dans un mois, lequel préférez-vous ?
+	 \item[\ding{164}] Recevoir 1000 francs CFA dans un mois ou bien 1500 francs CFA dans deux mois, lequel préférez-vous ? 
+	\end{itemize} 
+	 \end{exampleblock}
+	 	\begin{itemize}
+	\item Incohérence temporelle		
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%
+%%% diapo 6 %%%
+%%%%%%%%%%%%%%
+\begin{frame}{Les préférences se définissent par rapport à autrui}
+Les préférences sont influencées par des décisions à interaction personnelles
+\begin{block}{}
+	\begin{itemize}
+		\item  la réciprocité 
+		\item l’aversion à l’inégalité 
+		\item l'identité de groupe 
+		\item la conformité à la norme et à l’image
+		
+	\end{itemize}
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 7 %%%
+%%%%%%%%%%%%%%
+\subsubsection{Nature de l'information}
+
+\begin{frame}{Nature de l'information}
+\begin{block}{Classiques}
+\begin{itemize}
+\item L'information est supposée parfaite chez les agents économiques.
+	\begin{itemize}
+	\item Capables d'intégrer des nouvelles informations
+	\item erreur n'est possible qu'en manque d'informations
+	\end{itemize}
+
+\end{itemize}
+\end{block}
+
+\begin{block}{Comportementalistes}
+ \begin{itemize}
+ 	\item l'information est ignorée 
+ 	\item des biais 
+ 		\begin{itemize}
+ 		\item[\ding{248}] sur-confiance
+ 		\item[\ding{248}] poids subjectifs
+ 		\end{itemize}
+ \end{itemize}
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 8 %%%
+%%%%%%%%%%%%%%
+\subsubsection{mode de décision}
+
+\begin{frame}{Mode de décision : Rôle des incitations}
+%Le troisième point de rupture entre l’économie standard et l’économie comportementale, c’est le mode de décision et en particulier, le rôle des incitations.
+\begin{alertblock}{}
+Une incitation monétaire peut réduire la productivité
+\end{alertblock}
+
+\begin{exampleblock}{}
+ un des plus grands défis des modèles économiques aujourd’hui est de parvenir à modéliser les ressorts de cette hétérogénéité. 
+\end{exampleblock}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 9 %%%
+%%%%%%%%%%%%%%
+\subsection{Méthode}
+
+\begin{frame}{Méthode utilisée}%Avec tous ces erreurs
+\begin{tabular}{c l}
+\pgfornament[anchor=center,height=1cm]{4}& Économie traditionnelle = instrumentalisme\\
+\end{tabular}
+\begin{block}{} l’economie comportementale  \ding{253} \ding{253}  nouveaux modèles mathematiques
+\end{block}
+%On utilise donc
+ Méthodes principales
+\begin{itemize}
+\item[$\bullet$] expériences de laboratoires 
+\item[$\bullet$] expérimentations sur terrain
+\item[$\bullet$]  testing ou test de situation
+\end{itemize}
+\begin{exampleblock}{exemple de procédure d'application de la méthode expérimentale en économie}
+\begin{columns}
+\begin{column}{0.3\textwidth}
+ Elaboration du modèle
+\end{column}
+\vrule
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+\item Série de tests stylisé sur les agents 
+ généralement les étudiants
+\item Experiences de terrain
+\end{itemize}
+
+\end{column}
+\end{columns}
+\end{exampleblock}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%
+%%% diapo 10 %%%
+%%%%%%%%%%%%%%
+\begin{frame}{Méthode utilisée}
+Quelques images de laboratoires et de testing...
+	\begin{columns}
+	\begin{column}{0.5\textwidth}
+		\begin{figure}
+			\includegraphics[scale=0.53]{Lab_GATE.PNG}
+			\caption{Laboratoire du GATE}
+		\end{figure}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		\begin{figure}
+			\includegraphics[scale=0.6]{Lab_MONTREAL.PNG}
+			\caption{Laboratoire de Montréal}
+		\end{figure}
+	\end{column}
+  \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 11 %%%
+%%%%%%%%%%%%%%
+\section{Apports de l'économie comportementale}
+\begin{frame}{En guise d'introduction}
+\transblindshorizontal[duration=0.3]
+\begin{block}{}
+%Quelques questions auquels l'Economie comportementale peut apporter des réponses : %Est-ce que si on introduit un quota pour permettre aux femmes d’accéder aux postes de responsabilité, ça pénaliserait les hommes les plus compétents ? Pour lutter contre le terrorisme, est-ce qu’il faut faire des contrôles très intenses ou il vaut mieux refaire des contrôles aléatoires ? Dans une entreprise, donner les informations sur le bon fonctionnement d’un service ou les bons résultats d’un employé aurait un impact positif sur l’effort des autres services ou travailleurs ?
+Les apports de l’économie comportementale \\
+\vspace*{0.3cm}
+\begin{tabular}{c l}
+\pgfornament[anchor=center,height=1cm]{6}& au marché du travail\\
+\pgfornament[anchor=center,height=1cm]{6}& en entreprise et dans le monde académique\\
+\pgfornament[anchor=center,height=1cm]{6}& aux instances publiques
+\end{tabular}
+
+%\begin{itemize}
+%\item au marché du travail
+%\item entreprise et dans le monde académique
+%\item aux instances publiques
+%\end{itemize} 
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 12 %%%
+%%%%%%%%%%%%%%
+
+\subsection{Le marché de l'emploi}
+\subsubsection{L'accès à l'emploi}
+\begin{frame}{ Accès à l'emploi-biais de statu quo}
+%L'analyse de l'accès à l'emploi se subdivisent en différents points.
+\begin{block}{}
+	\begin{enumerate}
+		\item biais de statu-quo
+		\item le point de reference et l'aversion à la perte
+		\item le niveau de confiance inadapté dans certaines circonstances 
+	\end{enumerate}
+\end{block}
+%Approfondissons un tout petit peu chacun de ses aspects. C'est quoi alors le biais de statu-quo
+\begin{exampleblock}{definition}
+\textit{le biais de statu-quo} est un terme utilisé en finance comportementale pour désigner une préférence exagérée pour le statu quo dans la prise de décisions.
+\end{exampleblock}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 13 %%%
+%%%%%%%%%%%%%%
+\begin{frame}{ Accès à l'emploi -Point de reference et autres} Le point de référence irréaliste -l’aversion à la perte 
+\begin{exampleblock}{exemple}
+un travailleur qui a perdu son emploi et cherche un nouveau aura tendance à chercher un poste similaire au précédent, alors il aura tendance à surpondérer tout ce qui est au-dessus de ce point de référence et sous-estimé la probabilité des « mauvais » évènements ; ce qui va ralentir considérablement la recherche
+\end{exampleblock}
+\begin{itemize}
+\item[\ding{82}]  l'impatience
+\item[\ding{82}]  niveau de confiance inadapté
+\item[\ding{82}]  Locus de contrôle externe
+\item[\ding{82}]  Discrimination à l'embauche
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 14 %%%
+%%%%%%%%%%%%%%
+
+%\begin{frame}{ Accès à l'emploi -niveau de confiance inadapté}
+% Une sur-confiance peut être source de motivation mais également l'objet de difficultés d'embauche.
+%Par ailleurs, on a :
+ %\begin{itemize}
+%\item[\ding{82}] Locus de contrôle externe
+%\item[\ding{82}] Locus de contrôle interne
+%\end{itemize}
+%\begin{alertblock}{discrimination}
+%La difficulté à trouver un emploi peut aussi s’expliquer par la discrimination à l’embauche
+%\end{alertblock}
+%\end{frame}
+
+%%%%%%%%%%%%%%
+%%% diapo 15 %%%
+%%%%%%%%%%%%%%
+\subsubsection{Le rôle des incitations salariales}
+\begin{frame}{Rôle des incitations salariales }
+%C’est un domaine dans lequel l’économie comportementale a fait ses preuves.
+\begin{block}{Résultats tirés des expériences de laboratoires}
+\begin{itemize}
+\item[\ding{52}] véracité de l'hypothèse du\textsf{ salaire efficient}
+%\item[\ding{52}] L'incitation salariale n’est pas toujours une solution pour augmenter l’effort des employés.
+\item[\ding{52}] L'aversion à l'inégalité et le point de référence %jouent un immense rôle dans les biais
+\end{itemize}
+\end{block}
+\begin{center}
+Absence de bonus\\ 
+$\downarrow$ $\downarrow$
+\tcbox[enhanced,drop shadow,colback=white]{\Large Productivité des employés baisse }
+\end{center}
+%En l’absence de bonus pour les employés qui fournissent plus d’effort, la productivité moyenne dans l’entreprise reste faible par rapport à ce qu’elle aurait pu être. 
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 16 %%%
+%%%%%%%%%%%%%%
+\begin{frame}{Qu'en est-il des politiques de rémunération? }
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+		\includegraphics[scale=0.3]{question-mark-1019993_960_720.jpg}
+	\end{column}
+	
+	\begin{column}{0.5\textwidth}
+	Compétivité - Politiques de rémunération
+	%L’Economie Comportementale dans la meme dynamique étudie la question de compétitivité dans les politiques de rémunération.%
+	\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 17 %%%
+%%%%%%%%%%%%%%
+
+\subsubsection{impact des incitations non monétaires}
+\begin{frame}{impact des incitations non monétaires} 
+%Ici, c’est l’effet contraire qui est observé.
+
+\begin{itemize}
+\item effet d'éviction
+	\begin{itemize}
+		\item don du sang
+		\item élève sur-motivé
+	\end{itemize}
+\item  l’impact des incitations informationnelles 
+	\begin{itemize}
+		\item les effets des pairs sur la productivité
+		\item les récompenses publiques
+\end{itemize}
+\end{itemize}
+
+%\begin{exampleblock}{exemple du don de sang}
+%L’expérience a montré que si les dons de sang étaient rémunérés par exemple, la quantité offerte serait moindre.
+%\end{exampleblock}
+
+%\begin{itemize}
+%	\item dès fois il vaut mieux ne pas introduire %d'incitations monétaires.
+%\end{itemize}
+
+%\begin{exampleblock}{élève sur-motivé}
+%un enfant à qui on promet une récompense de 100 000 s’il obtient son certificat de fin d’étude primaire pourrait tellement le motiver au point de le rendre nerveux et créer surtout la peur de ne pas y arriver 
+%\end{exampleblock}
+
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 18 %%%
+%%%%%%%%%%%%%%
+\subsection{apports en entreprise et dans le monde académique}
+
+\begin{frame}{En entreprise}
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+		\includegraphics[scale=0.3]{la-motivation-au-travail-1-638.jpg}
+	\end{column}
+	
+	\begin{column}{0.5\textwidth}
+
+	 \hspace*{0.5cm} \ovalbox{Economie comportementale}
+	 \hspace*{0.5cm} Incitations $\Longrightarrow$ productivité
+
+	\end{column}
+		 
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 19 %%%
+%%%%%%%%%%%%%%
+\begin{frame}{Dans le monde académique}
+ \begin{block}{}
+  expériences en classe d'économie  \ding{253} \ding{253}  compréhension des modèles et limites
+ \end{block}
+ \begin{itemize}
+ \item Economie comportementale + Economie experimentale= application en économie
+ 	\begin{itemize}
+ 		\item microéconomie-théorie du producteur
+ 		\item macroéconomie-Fonction de puissance
+ 	\end{itemize}
+ \end{itemize}
+ 
+\begin{exampleblock}{Le jeu de l'ultimatum}
+\begin{itemize}
+\item[\ding{164}] Critiques de l'hypothèse d'indifférence
+\item[\ding{164}] Importances de normes sociales de comportement
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 20 %%%
+%%%%%%%%%%%%%%
+
+\subsection{apports dans les politiques publiques}
+\begin{frame}{Apports dans les politiques publiques-NUDGE}
+\begin{columns}
+ 
+\begin{column}{0.3\textwidth}
+Nudge... 
+\includegraphics[scale=0.3]{be-leader-beleader-bleader-referencement-web-referencement-.jpg} 
+\end{column}
+\hspace{1cm}  \ding{228}  \ding{228} \mbox{ }
+\begin{column}{0.6\textwidth}
+\begin{block}{}
+\begin{itemize}
+\item[\ding{52}] amélioration du recouvrement d'impôt en grande-bretagne
+\item[\ding{52}] amélioration du don d'organes
+
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%
+%%% diapo 21 %%%
+%%%%%%%%%%%%%%
+\begin{frame}{Apports dans les politiques publiques-NUDGE UNIT}
+
+\begin{block}{Naissance du Nudge unit}
+\begin{itemize}
+
+\item  entité physique crée en 2010
+
+\item vocation : soutien à l'instance publique
+\end{itemize}
+\end{block}
+\hspace{1cm}
+\begin{columns}
+
+	\begin{column}{0.3\textwidth}
+	\mycircled{  nudge unit}
+%\tcbox[enhanced,drop shadow,colback=white]{\Large Nudge unit}
+	\end{column}
+\hspace{-1cm}\ding{228} \ding{228} \ding{228} \ding{228} \hspace{1cm}
+		\begin{column}{0.5\textwidth}
+			\begin{block}{}
+				\begin{itemize}
+					\item[$\bullet$] Augmenter le civisme fiscal 
+					\item[$\bullet$] Favoriser des comportements d'épargne vertueux 
+					\item[$\bullet$] Lutter contre l'obésité à l'école 
+				\end{itemize}
+			\end{block}
+		\end{column}
+\end{columns}
+
+\end{frame}
+
+\section{limites}
+%%%%%%%%%%%%%%
+%%% diapo 22 %%%
+%%%%%%%%%%%%%%
+\subsection{ Jean-Michel SERVET}
+\begin{frame}{limites de l'Economie Comportementale}
+\transblindshorizontal[duration=0.3]
+\begin{block}{}
+\begin{itemize}
+\item[\ding{82}] Problème de généralisation
+\item[\ding{82}] méthode utilisée
+\end{itemize}
+\end{block}
+
+\begin{exampleblock}{Jean michel servet}
+\begin{itemize}
+\item aspects qualitatifs
+\end{itemize}
+\end{exampleblock}
+Voir \cite{Servet} pour plus de précions
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}[plain,t]
+\transwipe[duration=0.3]
+\vspace*{2cm}
+\begin{tikzpicture}[scale=5,transform shape]
+\draw (0,0) \Conclusion;
+\draw (-2em,-1ex) -- (2em,-1ex);
+\path[scope fading=south] (-2em,-0.25em) rectangle (1em,-3.75ex);
+\draw[yscale=-1] (0,2ex) \Conclusion;
+\end{tikzpicture}
+\end{frame}
+%\bibliographystyle{} % Le style est mis entre accolades.
+%\bibliography{biblio} % mon fichier de base de données s'appelle bibli.bib
+
+\begin{frame}[plain,t]
+
+\vspace*{2cm}
+\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=yellow!5!white,colframe=blue!75!black,colbacktitle=gray!80!black,
+  title=BIBLIOGRAPHIE,fonttitle=\bfseries,
+  boxed title style={size=small,colframe=red!50!black} ]
+
+\clearpage
+\addcontentsline{toc}{chapter}{Bibliographie}
+\begin{thebibliography}{9}
+\bibitem{Robin}
+ROBIN Stéphane , 2017,
+\emph{L'économie expérimentale : un outil pédagogique}.
+CNRS.
+\bibitem{Servet}
+SERVET Jean Michel , 2018,
+\emph{Economie comportementale en question}.
+Éditions Charles Léopold Mayer, Paris, 208p.
+\bibitem{Villeval}
+VILLEVAL Marie-Claire , 2016,
+\emph{ Economie comportementale du marché du travail}.
+Presses de Science Po, Paris, 112p.
+
+\end{thebibliography}
+  
+\end{tcolorbox}
+
+\end{frame}
+
+\begin{frame}[plain,t]
+\vspace*{1cm}
+\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=yellow!5!white,colframe=blue!75!black,colbacktitle=gray!80!black,
+  title=WEBOGRAPHIE,fonttitle=\bfseries,
+  boxed title style={size=small,colframe=red!50!black} ]
+%\addcontentsline{toc}{chapter}{Webographie}
+
+\hspace*{-1cm}
+\begin{itemize}
+\item L’ECONOMIE COMPORTEMENTALE :Un outil pour la reforme des politiques publiques
+\textcolor{blue}{\url{https://www.ifrap.org/etat-et-collectivites/leconomie-comportementale}}
+
+\item Revue économique: Développements récents de l'économie comportementale et expérimentale\\
+\textcolor{blue}{\url{https://www.cairn.info/revue-economique-2017-5-page-719.htm}}
+
+\item L'économie comportementale:un outil pour la réforme des politiques publiques
+\textcolor{blue}{https://www.ifrap.org/etat-et-collectivites/leconomie-comportementale-un-outil-pour-la-reforme-des-politiques-publiques}
+
+\end{itemize}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}[plain,t]
+\vspace{2cm}
+\begin{LARGE}
+\rotatebox{25}{\textsc{MERCI POUR}} \rotatebox{25}{\textsc{VOTRE ATTENTION}}
+\end{LARGE}
+\end{frame}
+\end{document}
